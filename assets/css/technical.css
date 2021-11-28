@@ -1,0 +1,209 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tech-events{
+    width: 100%;
+    background-color: #082032;
+    height: 100vh;
+    text-align: center;
+}
+.heading {
+    /* margin: 140px 0px 44px 0px; */
+    font-size: 1.0rem;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    top: 105px;
+}
+.underline {
+    height: 3px;
+    background-color: #ff4c29;
+    width: 200px;
+    position: relative;
+    top: 10px;
+    left: 48%;
+}
+@media (max-width: 575px) {
+    .underline {
+        left: 36%;
+    }
+  }
+.event{
+    border-radius: 10px;
+    margin: 23px;
+    /* background-size: 200% 100%; */
+    /* background-image: linear-gradient(to right, red 50%, black 50%);
+    transition: all 1s;
+    transition-duration: 1s; */
+    height: 50%;
+    /* min-height: 50%; */
+    width: 21%;
+    padding: 50px 10px;
+    display: inline-block;
+    position: relative;
+    top: 10em;
+}
+
+.event-image{
+    margin: 0 auto;
+    height: 250px;
+    width: 250px;
+}
+
+.event-image img{
+    height: 100%;
+    width: 100%;   
+    background-size: 100% 100%;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* .event:hover{
+    background-position: 100% 0;
+    transform: scale(2.0);
+} */
+
+/* .event-link{
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.btn {
+    background: #ff4c29;
+    border-radius: 15px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px;
+    text-decoration: none;
+}
+.btn:hover {
+    color: white;
+} */
+.btn h1 {
+    padding: 50px 0;
+    font-size: 45px;
+    text-align: center;
+    color: rgb(54, 56, 55);
+  }
+.btn :active, :hover, :focus {
+    outline: 0!important;
+    outline-offset: 0;
+}
+.btn ::before,::after {
+    position: absolute;
+    content: "";
+}
+  
+  .btn-holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 10px auto 35px;
+  }
+.btn {
+    position: relative;
+    display: inline-block;
+    width: 146px;
+    height: 51px;
+    background-color: #ff4c29;
+    border: none;
+    cursor: pointer;
+    margin: 10px 25px 15px; 
+    min-width: 150px;
+}
+.btn span {         
+  position: relative;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  top: 0; left: 0;
+  width: 100%;
+  padding: -1px 20px;
+  transition: 0.3s;
+  color: #fff;
+}
+.btn.hover-border-3::before,
+.btn.hover-border-3::after {
+  width: 0%; height: 0%;
+  opacity: 0;
+  transition: width 0.2s 0.15s linear, height 0.15s linear, opacity 0s 0.35s;
+}
+.btn.hover-border-3::before {
+  top: 0; right: 0;
+  border-top: 4px solid rgb(253, 253, 253);
+  border-left: 4px solid rgb(248, 247, 247);
+}
+.btn.hover-border-3::after {
+  bottom: 0; left: 0;
+  border-bottom: 4px solid rgb(248, 250, 249);
+  border-right: 4px solid rgb(250, 247, 246);
+}
+.btn.hover-border-3:hover::before,
+.btn.hover-border-3:hover::after {
+  width: 100%; height: 99%;
+  opacity: 1;
+  transition: width 0.2s linear, height 0.15s 0.2s linear, opacity 0s;   
+}
+
+@media (max-width: 700px) {
+    .event{
+        display: block;
+        height: 50%;
+        width: 80%;
+        margin: 50px auto;
+    }
+
+    .tech-events{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        padding-top: 20px;
+        height: auto;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1200px) {
+
+    .event{
+        display: block;
+        height: 40%;
+        width: 50%;
+        margin: 50px auto;
+    }
+
+    .tech-events{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        height: auto;
+        /* padding: 50px 0; */
+    }
+}
+
+@media (max-width: 575px) {
+    .tech-events {
+        overflow: auto;
+    }
+}
