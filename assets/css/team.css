@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Eczar&family=IBM+Plex+Sans&family=Libre+Baskerville&family=Noto+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Eczar&family=IBM+Plex+Sans&family=Libre+Baskerville&family=Noto+Serif&family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Eczar&family=IBM+Plex+Sans&family=Libre+Baskerville&family=Noto+Serif&family=Permanent+Marker&family=Rubik&display=swap");
+
+* {
+  transition: all 0.5s;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+
+.team {
+  text-align: center;
+  width: 100%;
+  background-color: #082032;
+  overflow: hidden;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 21%;
+  min-width: 21%;
+  margin: 20px;
+  display: inline-block;
+  border-radius: 5px 50px 5px 5px;
+  background-color: #40394a;
+  background: linear-gradient(45deg, #2c394b 50%, #334756 50%);
+  padding: 40px 0;
+  color: white;
+  transition: all 0.5s;
+}
+
+.card img {
+  border-radius: 50%;
+  /* width: 60%;
+    height: 22%; */
+  width: 150px;
+  height: 150px;
+  border: 5px solid #ff4c29;
+}
+
+.card h2,h3 {
+  font-family: "Rubik", sans-serif;
+  position: relative;
+  top: 5px;
+}
+
+.team .card a i {
+  font-size: 1.4rem;
+  padding: 7px;
+  margin: 0 5px;
+  color: white;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.team .card a i:hover {
+  color: black;
+  /* border: 1px solid white; */
+  border-radius: 3px;
+}
+
+.card h4 {
+  color: #ff4c29;
+  /* font-size: 1.2rem; */
+  font-family: "Rubik", sans-serif;
+}
+
+.heading h1 {
+  margin: 140px 0px 44px 0px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.heading h1 {
+  text-align: center;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.underline {
+  height: 3px;
+  background-color: #ff4c29;
+  width: 200px;
+  margin: -20px auto 0 auto;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover,
+a:hover {
+  opacity: 0.7;
+}
+
+.team:hover .card:hover {
+  opacity: 1;
+  border-radius: 5px;
+  background: linear-gradient(45deg, #334756 50%, #2c394b 50%);
+}
+
+.team:hover > .card:hover img {
+  transform: scale(1.2);
+}
+
+body:hover .team:hover {
+  opacity: 1;
+}
+
+@media (max-width: 700px) {
+  .team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    display: block;
+    width: 80%;
+    margin: 25px 0;
+    padding: 50px 0;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1024px) {
+  .card {
+    width: 35%;
+    min-width: 35%;
+  }
+
+  .card img {
+    /* height: 30%;
+        width: 70%; */
+    margin: 10px 0;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #FF4C29;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #fc2c03;
+}
