@@ -26,6 +26,12 @@
     z-index: 999999;
 }
 
+@media (max-width: 575px) {
+    .vbox-overlay {
+      top: -520px;
+    }
+}
+
 /* ----- navigation ----- */
 .vbox-title{
     width: 100%;
