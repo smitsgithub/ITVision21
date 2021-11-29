@@ -1068,7 +1068,7 @@ section {
 
 @media (max-width: 575px) {
   #footer {
-    height: 100%;
+    height: auto;
   }
 }
 
