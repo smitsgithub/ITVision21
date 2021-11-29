@@ -27,7 +27,7 @@
 }
 @media (max-width: 575px) {
     .vbox-overlay {
-      top: -100px;
+      top: -200px;
     }
 }
 /* ----- navigation ----- */
